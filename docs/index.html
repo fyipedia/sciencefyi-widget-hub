@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Science FYI Embed Widgets — Chemistry, Alloys, Gems, Stars, Minerals for Any Website</title>
+  <meta name="description" content="Embed Science FYI widgets — 118 elements, 100+ alloys, 1,800+ gemstones, 100K+ stars, 6,215 minerals — on any website. 5 npm packages, IUPAC/IMA/IAU references, free CDN.">
+  <meta name="theme-color" content="#4F46E5">
+  <meta name="keywords" content="chemistry widget, periodic table widget, gemstone widget, star widget, mineral widget, alloy widget, embed, fyipedia, sciencefyi, labfyi">
+
+  <meta property="og:title" content="Science FYI Embed Widgets — 5 Site Family of Physical Sciences">
+  <meta property="og:description" content="Embed periodic table, alloy properties, gemstone catalog, star/exoplanet, mineral widgets from the Science FYI family.">
+  <meta property="og:url" content="https://widget.labfyi.com">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://labfyi.com/static/og/homepage.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="Science FYI">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Science FYI Embed Widgets — 5 packages for chemistry/astronomy/geology">
+  <meta name="twitter:description" content="Periodic table, alloys, gems, stars, minerals — embed in one line of HTML.">
+  <meta name="twitter:image" content="https://labfyi.com/static/og/homepage.png">
+
+  <link rel="canonical" href="https://widget.labfyi.com">
+  <meta name="author" content="FYIPedia">
+  <meta name="robots" content="index, follow">
+
+  <link rel="icon" href="https://labfyi.com/static/favicon.ico" sizes="32x32">
+  <link rel="icon" href="https://labfyi.com/static/icon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {"@type": "WebApplication", "name": "Science FYI Embed Widgets", "url": "https://widget.labfyi.com", "applicationCategory": "EducationalApplication", "operatingSystem": "Web", "description": "Family of 5 embeddable widget packages for physical sciences: ChemFYI, AlloyFYI, GemFYI, StarFYI, MineralFYI. IUPAC, IMA, IAU authoritative references.", "publisher": {"@type": "Organization", "name": "FYIPedia", "url": "https://fyipedia.com"}, "isPartOf": {"@type": "WebSite", "name": "Science FYI", "url": "https://labfyi.com"}},
+      {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "FYIPedia", "item": "https://fyipedia.com"}, {"@type": "ListItem", "position": 2, "name": "Science FYI", "item": "https://labfyi.com"}, {"@type": "ListItem", "position": 3, "name": "Widget Family Docs"}]},
+      {"@type": "ItemList", "name": "Science FYI Embed Packages", "numberOfItems": 5, "itemListElement": [
+        {"@type": "SoftwareSourceCode", "name": "chemfyi-embed", "url": "https://www.npmjs.com/package/chemfyi-embed", "codeRepository": "https://github.com/fyipedia/chemfyi-embed", "programmingLanguage": "TypeScript", "license": "https://opensource.org/licenses/MIT"},
+        {"@type": "SoftwareSourceCode", "name": "alloyfyi-embed", "url": "https://www.npmjs.com/package/alloyfyi-embed", "codeRepository": "https://github.com/fyipedia/alloyfyi-embed", "programmingLanguage": "TypeScript", "license": "https://opensource.org/licenses/MIT"},
+        {"@type": "SoftwareSourceCode", "name": "gemfyi-embed", "url": "https://www.npmjs.com/package/gemfyi-embed", "codeRepository": "https://github.com/fyipedia/gemfyi-embed", "programmingLanguage": "TypeScript", "license": "https://opensource.org/licenses/MIT"},
+        {"@type": "SoftwareSourceCode", "name": "starfyi-embed", "url": "https://www.npmjs.com/package/starfyi-embed", "codeRepository": "https://github.com/fyipedia/starfyi-embed", "programmingLanguage": "TypeScript", "license": "https://opensource.org/licenses/MIT"},
+        {"@type": "SoftwareSourceCode", "name": "mineralfyi-embed", "url": "https://www.npmjs.com/package/mineralfyi-embed", "codeRepository": "https://github.com/fyipedia/mineralfyi-embed", "programmingLanguage": "TypeScript", "license": "https://opensource.org/licenses/MIT"}
+      ]},
+      {"@type": "FAQPage", "mainEntity": [
+        {"@type": "Question", "name": "Where does ChemFYI source periodic table data?", "acceptedAnswer": {"@type": "Answer", "text": "IUPAC + NIST. 118 confirmed elements with atomic number, atomic mass, electron configuration, ionization energies, melting/boiling points, density, electronegativity (Pauling), discovery year, isotopes. Compounds via CAS Registry numbers. Reaction equations balanced."}},
+        {"@type": "Question", "name": "What alloy properties does AlloyFYI document?", "acceptedAnswer": {"@type": "Answer", "text": "100+ alloys: steels (carbon, stainless, tool, HSLA), aluminum (1xxx-7xxx series), brass, bronze, titanium, nickel, superalloys (Inconel, Hastelloy). Composition tables, tensile/yield strength, hardness (Brinell/Rockwell/Vickers), density, thermal conductivity, applications."}},
+        {"@type": "Question", "name": "How are gemstones in GemFYI classified?", "acceptedAnswer": {"@type": "Answer", "text": "1,800+ gemstones by GIA + IGS standards. Hardness (Mohs scale), refractive index, specific gravity, crystal system, dispersion. Diamond 4Cs (carat/clarity/color/cut), pearl grading, opal types. Geographic origins, treatment disclosures (heated/irradiated/oiled), synthetic vs natural."}},
+        {"@type": "Question", "name": "Which star catalogs does StarFYI integrate?", "acceptedAnswer": {"@type": "Answer", "text": "Hipparcos/Tycho/Gaia DR3 catalogs. 100K+ stars with magnitudes (apparent/absolute), spectral class (OBAFGKM + Wolf-Rayet/T/L/Y), luminosity class, parallax distance, proper motion, exoplanets (NASA Exoplanet Archive). Constellations (88 IAU), Messier/NGC catalogs."}},
+        {"@type": "Question", "name": "Why 6,215 minerals in MineralFYI?", "acceptedAnswer": {"@type": "Answer", "text": "Per the IMA (International Mineralogical Association) current list. Each mineral has chemical formula, crystal system (cubic/hexagonal/trigonal/tetragonal/orthorhombic/monoclinic/triclinic), Mohs hardness, density, cleavage, luster, color, locality. Dana + Nickel-Strunz classification cross-references."}}
+      ]}
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config = { darkMode: 'class', theme: { extend: { colors: { accent: '#4F46E5' }, fontFamily: { mono: ['"JetBrains Mono"', '"Fira Code"', 'ui-monospace', 'monospace'] } } } }</script>
+  <script>(function(){var t = localStorage.getItem('theme'); if (t === 'dark' || (!t && window.matchMedia('(prefers-color-scheme: dark)').matches)) document.documentElement.classList.add('dark');})();</script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.9/dist/cdn.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chemfyi-embed@1/dist/embed.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/alloyfyi-embed@1/dist/embed.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gemfyi-embed@1/dist/embed.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/starfyi-embed@1/dist/embed.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mineralfyi-embed@1/dist/embed.min.js"></script>
+
+  <style>
+    [x-cloak]{display:none!important}
+    :root{--accent:#4F46E5} .accent-text{color:var(--accent)} .accent-bg{background-color:var(--accent)}
+    pre{tab-size:2;margin:0}
+    .code-block{background:#0f172a;color:#e2e8f0;border-radius:8px;padding:1rem;font-size:13px;line-height:1.7;overflow-x:auto;font-family:'JetBrains Mono',ui-monospace,monospace}
+    .hl-tag{color:#7dd3fc} .hl-attr{color:#86efac} .hl-val{color:#fde68a} .hl-comment{color:#475569;font-style:italic}
+    .site-card { transition: all 0.2s; } .site-card:hover { transform: translateY(-2px); box-shadow: 0 10px 30px -10px rgba(79, 70, 229, 0.3); }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-900 antialiased dark:bg-slate-950 dark:text-slate-100">
+
+  <header class="bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-14 flex items-center justify-between">
+      <a href="https://labfyi.com" class="flex items-center gap-2 font-bold text-lg" style="color: #4F46E5">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
+        <span>Science FYI</span>
+        <span class="text-xs font-normal text-slate-500 dark:text-slate-400 bg-slate-100 dark:bg-slate-800 px-2 py-0.5 rounded-full font-sans">Widget Family</span>
+      </a>
+      <nav class="hidden sm:flex items-center gap-6 text-sm text-slate-600 dark:text-slate-400">
+        <a href="#sites" class="hover:text-accent">5 Sites</a>
+        <a href="#faq" class="hover:text-accent">FAQ</a>
+        <a href="https://github.com/fyipedia" class="hover:text-accent" target="_blank" rel="noopener">GitHub ↗</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="bg-gradient-to-br from-indigo-50 via-white to-violet-50 dark:from-slate-900 dark:via-slate-950 dark:to-slate-900 border-b border-slate-200 dark:border-slate-800">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-16 sm:py-20 text-center">
+      <span class="inline-block px-3 py-1 text-xs font-semibold tracking-wider uppercase rounded-full" style="background: #4F46E5; color: white">5 Widget Packages · 1 Ecosystem</span>
+      <h1 class="mt-6 text-4xl sm:text-5xl font-bold tracking-tight">Science FYI <span class="accent-text">Embed Widgets</span></h1>
+      <p class="mt-6 text-lg sm:text-xl text-slate-600 dark:text-slate-400 max-w-3xl mx-auto leading-relaxed">
+        Embed <a href="https://chemfyi.com" class="accent-text font-semibold hover:underline">118 elements</a>,
+        <a href="https://alloyfyi.com" class="accent-text font-semibold hover:underline">100+ alloys</a>,
+        <a href="https://gemfyi.com" class="accent-text font-semibold hover:underline">1,800 gemstones</a>,
+        <a href="https://starfyi.com" class="accent-text font-semibold hover:underline">100K stars</a>, and
+        <a href="https://mineralfyi.com" class="accent-text font-semibold hover:underline">6,215 minerals</a>
+        in any website.
+      </p>
+      <p class="mt-4 text-base text-slate-500 dark:text-slate-400 max-w-2xl mx-auto">
+        IUPAC + NIST + IMA + IAU + GIA references. Zero dependencies. Shadow DOM. 4 themes. Free CDN.
+      </p>
+      <div class="mt-8 flex flex-wrap justify-center gap-3">
+        <a href="#quick-start" class="px-5 py-2.5 rounded-lg font-medium accent-bg text-white hover:opacity-90 transition">Get Started</a>
+        <a href="https://labfyi.com" class="px-5 py-2.5 rounded-lg font-medium border border-slate-300 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 transition">Browse Science FYI →</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="sites" class="py-16 sm:py-20 bg-white dark:bg-slate-900">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <h2 class="text-3xl font-bold text-center">The Science FYI Family</h2>
+      <p class="mt-3 text-center text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">Five sites covering chemistry, materials, mineralogy, gemology, and astronomy.</p>
+
+      <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <article class="site-card p-6 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-10 h-10 rounded-lg flex items-center justify-center text-white text-lg font-bold" style="background: #059669">C</div>
+            <div><h3 class="font-bold text-lg"><a href="https://chemfyi.com" class="accent-text hover:underline">ChemFYI</a></h3><p class="text-xs text-slate-500">chemfyi.com · <a href="https://www.npmjs.com/package/chemfyi-embed" target="_blank" rel="noopener" class="hover:underline">npm</a></p></div>
+          </div>
+          <p class="text-sm text-slate-600 dark:text-slate-400"><strong>118 elements</strong> · IUPAC/NIST · electron config · ionization · CAS compounds · balanced reactions.</p>
+          <div class="mt-4 flex flex-wrap gap-2 text-xs">
+            <a href="https://chemfyi.com/elements/" class="px-2 py-1 rounded bg-indigo-100 text-indigo-700 dark:bg-indigo-900/30 dark:text-indigo-300 hover:bg-indigo-200">Elements</a>
+            <a href="https://chemfyi.com/compounds/" class="px-2 py-1 rounded bg-indigo-100 text-indigo-700 dark:bg-indigo-900/30 dark:text-indigo-300 hover:bg-indigo-200">Compounds</a>
+            <a href="https://chemfyi.com/glossary/" class="px-2 py-1 rounded bg-indigo-100 text-indigo-700 dark:bg-indigo-900/30 dark:text-indigo-300 hover:bg-indigo-200">Glossary</a>
+          </div>
+        </article>
+
+        <article class="site-card p-6 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-10 h-10 rounded-lg flex items-center justify-center text-white text-lg font-bold" style="background: #2563EB">A</div>
+            <div><h3 class="font-bold text-lg"><a href="https://alloyfyi.com" class="accent-text hover:underline">AlloyFYI</a></h3><p class="text-xs text-slate-500">alloyfyi.com · <a href="https://www.npmjs.com/package/alloyfyi-embed" target="_blank" rel="noopener" class="hover:underline">npm</a></p></div>
+          </div>
+          <p class="text-sm text-slate-600 dark:text-slate-400"><strong>100+ alloys</strong> · steels/Al/brass/bronze/Ti/Ni · tensile/yield strength · Brinell/Rockwell/Vickers hardness · applications.</p>
+          <div class="mt-4 flex flex-wrap gap-2 text-xs">
+            <a href="https://alloyfyi.com/alloys/" class="px-2 py-1 rounded bg-indigo-100 text-indigo-700 dark:bg-indigo-900/30 dark:text-indigo-300 hover:bg-indigo-200">Alloys</a>
+            <a href="https://alloyfyi.com/categories/" class="px-2 py-1 rounded bg-indigo-100 text-indigo-700 dark:bg-indigo-900/30 dark:text-indigo-300 hover:bg-indigo-200">Categories</a>
+            <a href="https://alloyfyi.com/applications/" class="px-2 py-1 rounded bg-indigo-100 text-indigo-700 dark:bg-indigo-900/30 dark:text-indigo-300 hover:bg-indigo-200">Applications</a>
+          </div>
+        </article>
+
+        <article class="site-card p-6 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-10 h-10 rounded-lg flex items-center justify-center text-white text-lg font-bold" style="background: #C026D3">G</div>
+            <div><h3 class="font-bold text-lg"><a href="https://gemfyi.com" class="accent-text hover:underline">GemFYI</a></h3><p class="text-xs text-slate-500">gemfyi.com · <a href="https://www.npmjs.com/package/gemfyi-embed" target="_blank" rel="noopener" class="hover:underline">npm</a></p></div>
+          </div>
+          <p class="text-sm text-slate-600 dark:text-slate-400"><strong>1,800+ gemstones</strong> · GIA + IGS · Mohs/refractive/sg · 4Cs (diamond) · treatments · origins.</p>
+          <div class="mt-4 flex flex-wrap gap-2 text-xs">
+            <a href="https://gemfyi.com/gems/" class="px-2 py-1 rounded bg-indigo-100 text-indigo-700 dark:bg-indigo-900/30 dark:text-indigo-300 hover:bg-indigo-200">Browse</a>
+            <a href="https://gemfyi.com/families/" class="px-2 py-1 rounded bg-indigo-100 text-indigo-700 dark:bg-indigo-900/30 dark:text-indigo-300 hover:bg-indigo-200">Families</a>
+            <a href="https://gemfyi.com/glossary/" class="px-2 py-1 rounded bg-indigo-100 text-indigo-700 dark:bg-indigo-900/30 dark:text-indigo-300 hover:bg-indigo-200">Glossary</a>
+          </div>
+        </article>
+
+        <article class="site-card p-6 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-10 h-10 rounded-lg flex items-center justify-center text-white text-lg font-bold" style="background: #4338CA">★</div>
+            <div><h3 class="font-bold text-lg"><a href="https://starfyi.com" class="accent-text hover:underline">StarFYI</a></h3><p class="text-xs text-slate-500">starfyi.com · <a href="https://www.npmjs.com/package/starfyi-embed" target="_blank" rel="noopener" class="hover:underline">npm</a></p></div>
+          </div>
+          <p class="text-sm text-slate-600 dark:text-slate-400"><strong>100K+ stars</strong> · Hipparcos/Gaia DR3 · spectral class OBAFGKM · NASA Exoplanet Archive · 88 IAU constellations · Messier/NGC.</p>
+          <div class="mt-4 flex flex-wrap gap-2 text-xs">
+            <a href="https://starfyi.com/stars/" class="px-2 py-1 rounded bg-indigo-100 text-indigo-700 dark:bg-indigo-900/30 dark:text-indigo-300 hover:bg-indigo-200">Stars</a>
+            <a href="https://starfyi.com/constellations/" class="px-2 py-1 rounded bg-indigo-100 text-indigo-700 dark:bg-indigo-900/30 dark:text-indigo-300 hover:bg-indigo-200">Constellations</a>
+            <a href="https://starfyi.com/exoplanets/" class="px-2 py-1 rounded bg-indigo-100 text-indigo-700 dark:bg-indigo-900/30 dark:text-indigo-300 hover:bg-indigo-200">Exoplanets</a>
+          </div>
+        </article>
+
+        <article class="site-card p-6 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-10 h-10 rounded-lg flex items-center justify-center text-white text-lg font-bold" style="background: #7E22CE">M</div>
+            <div><h3 class="font-bold text-lg"><a href="https://mineralfyi.com" class="accent-text hover:underline">MineralFYI</a></h3><p class="text-xs text-slate-500">mineralfyi.com · <a href="https://www.npmjs.com/package/mineralfyi-embed" target="_blank" rel="noopener" class="hover:underline">npm</a></p></div>
+          </div>
+          <p class="text-sm text-slate-600 dark:text-slate-400"><strong>6,215 minerals</strong> · IMA list · 7 crystal systems · Mohs hardness · Dana + Nickel-Strunz · localities.</p>
+          <div class="mt-4 flex flex-wrap gap-2 text-xs">
+            <a href="https://mineralfyi.com/minerals/" class="px-2 py-1 rounded bg-indigo-100 text-indigo-700 dark:bg-indigo-900/30 dark:text-indigo-300 hover:bg-indigo-200">Minerals</a>
+            <a href="https://mineralfyi.com/crystal-systems/" class="px-2 py-1 rounded bg-indigo-100 text-indigo-700 dark:bg-indigo-900/30 dark:text-indigo-300 hover:bg-indigo-200">Crystal Systems</a>
+            <a href="https://mineralfyi.com/dana/" class="px-2 py-1 rounded bg-indigo-100 text-indigo-700 dark:bg-indigo-900/30 dark:text-indigo-300 hover:bg-indigo-200">Dana Classification</a>
+          </div>
+        </article>
+
+        <article class="site-card p-6 rounded-xl border-2 border-dashed border-indigo-300 dark:border-indigo-700 bg-indigo-50 dark:bg-indigo-950/30">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-10 h-10 rounded-lg flex items-center justify-center text-white text-lg font-bold" style="background: linear-gradient(135deg, #6366F1, #8B5CF6, #A855F7)">∞</div>
+            <div><h3 class="font-bold text-lg"><a href="https://fyipedia.com" class="accent-text hover:underline">FYIPedia Umbrella</a></h3><p class="text-xs text-slate-500">Science FYI is 1 of 11 FYI Families</p></div>
+          </div>
+          <p class="text-sm text-slate-600 dark:text-slate-400">Cross-references: <a href="https://widget.naturefyi.com" class="accent-text hover:underline">Nature FYI</a> (biology), <a href="https://widget.toolfyi.com" class="accent-text hover:underline">Utility FYI</a> (unit conversion), <a href="https://widget.creativefyi.com" class="accent-text hover:underline">Creative FYI</a> (color science).</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="quick-start" class="py-16 sm:py-20 bg-slate-50 dark:bg-slate-950">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <h2 class="text-3xl font-bold text-center">Quick Start</h2>
+      <div class="mt-8 max-w-3xl mx-auto">
+        <pre class="code-block"><code><span class="hl-comment">&lt;!-- Load any science widget scripts --&gt;</span>
+<span class="hl-tag">&lt;script</span> <span class="hl-attr">src</span>=<span class="hl-val">"https://cdn.jsdelivr.net/npm/chemfyi-embed@1/dist/embed.min.js"</span><span class="hl-tag">&gt;&lt;/script&gt;</span>
+<span class="hl-tag">&lt;script</span> <span class="hl-attr">src</span>=<span class="hl-val">"https://cdn.jsdelivr.net/npm/starfyi-embed@1/dist/embed.min.js"</span><span class="hl-tag">&gt;&lt;/script&gt;</span>
+
+<span class="hl-comment">&lt;!-- Drop widgets --&gt;</span>
+<span class="hl-tag">&lt;div</span> <span class="hl-attr">data-chemfyi</span>=<span class="hl-val">"entity"</span> <span class="hl-attr">data-slug</span>=<span class="hl-val">"carbon"</span><span class="hl-tag">&gt;&lt;/div&gt;</span>
+<span class="hl-tag">&lt;div</span> <span class="hl-attr">data-starfyi</span>=<span class="hl-val">"entity"</span> <span class="hl-attr">data-slug</span>=<span class="hl-val">"sirius"</span><span class="hl-tag">&gt;&lt;/div&gt;</span></code></pre>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="py-16 sm:py-20 bg-white dark:bg-slate-900">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6">
+      <h2 class="text-3xl font-bold text-center">FAQ</h2>
+      <div class="mt-10 space-y-4">
+        <details class="p-5 rounded-lg border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950"><summary class="font-semibold cursor-pointer">Where does ChemFYI source periodic table data?</summary><p class="mt-3 text-slate-600 dark:text-slate-400"><a href="https://chemfyi.com" class="accent-text hover:underline">ChemFYI</a> sources IUPAC + NIST. <strong>118 elements</strong> with atomic number, mass, electron config, ionization, melting/boiling points, electronegativity, isotopes. <a href="https://chemfyi.com/compounds/" class="accent-text hover:underline">Compounds</a> via CAS Registry. Balanced reactions.</p></details>
+        <details class="p-5 rounded-lg border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950"><summary class="font-semibold cursor-pointer">What alloy properties does AlloyFYI document?</summary><p class="mt-3 text-slate-600 dark:text-slate-400"><a href="https://alloyfyi.com" class="accent-text hover:underline">AlloyFYI</a> documents 100+ alloys: steels (carbon/stainless/tool/HSLA), aluminum (1xxx-7xxx), brass, bronze, titanium, superalloys (Inconel, Hastelloy). Tensile/yield strength, hardness (Brinell/Rockwell/Vickers).</p></details>
+        <details class="p-5 rounded-lg border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950"><summary class="font-semibold cursor-pointer">How are gemstones classified?</summary><p class="mt-3 text-slate-600 dark:text-slate-400"><a href="https://gemfyi.com" class="accent-text hover:underline">GemFYI</a> uses GIA + IGS standards. <strong>1,800+ gemstones</strong> with Mohs hardness, refractive index, specific gravity, crystal system, dispersion. Diamond 4Cs, pearl grading, opal types. <a href="https://gemfyi.com/glossary/" class="accent-text hover:underline">Gemology glossary</a>.</p></details>
+        <details class="p-5 rounded-lg border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950"><summary class="font-semibold cursor-pointer">Which star catalogs does StarFYI integrate?</summary><p class="mt-3 text-slate-600 dark:text-slate-400"><a href="https://starfyi.com" class="accent-text hover:underline">StarFYI</a> uses Hipparcos/Tycho/Gaia DR3. <strong>100K+ stars</strong> with apparent/absolute magnitude, spectral class (OBAFGKM), parallax distance. <a href="https://starfyi.com/exoplanets/" class="accent-text hover:underline">Exoplanets</a> via NASA Exoplanet Archive. <a href="https://starfyi.com/constellations/" class="accent-text hover:underline">88 IAU constellations</a>.</p></details>
+        <details class="p-5 rounded-lg border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950"><summary class="font-semibold cursor-pointer">Why 6,215 minerals in MineralFYI?</summary><p class="mt-3 text-slate-600 dark:text-slate-400">Per the <strong>IMA</strong> (International Mineralogical Association) current list. <a href="https://mineralfyi.com" class="accent-text hover:underline">MineralFYI</a> has chemical formula, crystal system, Mohs hardness, density, cleavage, luster, color, locality per mineral. <a href="https://mineralfyi.com/dana/" class="accent-text hover:underline">Dana classification</a> + Nickel-Strunz cross-references.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 py-12">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-sm">
+        <div><h3 class="font-bold mb-3">Science FYI</h3><ul class="space-y-2 text-slate-600 dark:text-slate-400"><li><a href="https://chemfyi.com" class="hover:accent-text">ChemFYI</a></li><li><a href="https://alloyfyi.com" class="hover:accent-text">AlloyFYI</a></li><li><a href="https://gemfyi.com" class="hover:accent-text">GemFYI</a></li><li><a href="https://starfyi.com" class="hover:accent-text">StarFYI</a></li><li><a href="https://mineralfyi.com" class="hover:accent-text">MineralFYI</a></li></ul></div>
+        <div><h3 class="font-bold mb-3">Widget Docs</h3><ul class="space-y-2 text-slate-600 dark:text-slate-400"><li><a href="https://widget.chemfyi.com" class="hover:accent-text">widget.chemfyi.com</a></li><li><a href="https://widget.alloyfyi.com" class="hover:accent-text">widget.alloyfyi.com</a></li><li><a href="https://widget.gemfyi.com" class="hover:accent-text">widget.gemfyi.com</a></li><li><a href="https://widget.starfyi.com" class="hover:accent-text">widget.starfyi.com</a></li><li><a href="https://widget.mineralfyi.com" class="hover:accent-text">widget.mineralfyi.com</a></li></ul></div>
+        <div><h3 class="font-bold mb-3">npm Packages</h3><ul class="space-y-2 text-slate-600 dark:text-slate-400"><li><a href="https://www.npmjs.com/package/chemfyi-embed" target="_blank" rel="noopener" class="hover:accent-text">chemfyi-embed</a></li><li><a href="https://www.npmjs.com/package/alloyfyi-embed" target="_blank" rel="noopener" class="hover:accent-text">alloyfyi-embed</a></li><li><a href="https://www.npmjs.com/package/gemfyi-embed" target="_blank" rel="noopener" class="hover:accent-text">gemfyi-embed</a></li><li><a href="https://www.npmjs.com/package/starfyi-embed" target="_blank" rel="noopener" class="hover:accent-text">starfyi-embed</a></li><li><a href="https://www.npmjs.com/package/mineralfyi-embed" target="_blank" rel="noopener" class="hover:accent-text">mineralfyi-embed</a></li></ul></div>
+        <div><h3 class="font-bold mb-3">Sister Families</h3><ul class="space-y-2 text-slate-600 dark:text-slate-400"><li><a href="https://fyipedia.com" class="hover:accent-text">FYIPedia</a></li><li><a href="https://widget.creativefyi.com" class="hover:accent-text">Creative FYI</a></li><li><a href="https://widget.naturefyi.com" class="hover:accent-text">Nature FYI</a></li><li><a href="https://widget.toolfyi.com" class="hover:accent-text">Utility FYI</a></li><li><a href="https://widget.tagfyi.com" class="hover:accent-text">Tag FYI</a></li></ul></div>
+      </div>
+      <div class="mt-8 pt-6 border-t border-slate-200 dark:border-slate-800 text-sm text-slate-500 dark:text-slate-400 flex flex-wrap items-center justify-between gap-4">
+        <p>Built with care by <a href="https://fyipedia.com" class="accent-text hover:underline">FYIPedia</a>. MIT licensed.</p>
+        <p>Powered by <a href="https://labfyi.com" class="accent-text hover:underline">Science FYI</a> · IUPAC/NIST/IMA/IAU/GIA references.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
